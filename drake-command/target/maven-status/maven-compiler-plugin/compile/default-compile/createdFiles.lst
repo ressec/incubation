@@ -1,0 +1,5 @@
+org\heliosphere\drake\command\ExitCommand.class
+org\heliosphere\drake\command\HelpCommand.class
+org\heliosphere\drake\command\LoginCommand.class
+org\heliosphere\drake\command\PropertyCommand.class
+org\heliosphere\drake\command\LogoutCommand.class

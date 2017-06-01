@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>drake</artifactId>
+    <groupId>org.heliosphere.drake</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../drake</relativePath>
+  </parent>
+  <artifactId>drake-utility</artifactId>
+  <name>Drake Utility</name>
+  <dependencies>
+  	<dependency>
+  		<groupId>joda-time</groupId>
+  		<artifactId>joda-time</artifactId>
+  	</dependency>
+  </dependencies>
+  <description>The drake-utility project is part of the Heliosphere's Drake framework. It contains the root utility stuff of the framework.</description>
+</project>

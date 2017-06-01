@@ -1,0 +1,126 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>drake</artifactId>
+		<groupId>org.heliosphere.drake</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../drake</relativePath>
+	</parent>
+	<artifactId>drake-server</artifactId>
+	<name>Drake Server</name>
+	<description>The drake-server project is part of the Heliosphere's Drake framework. It contains the base stuff for implementing a Drake server.</description>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.10</version>
+			</plugin>
+			<plugin>
+				<groupId>com.googlecode.mavennatives</groupId>
+				<artifactId>maven-nativedependencies-plugin</artifactId>
+				<version>0.0.7</version>
+				<executions>
+					<execution>
+						<id>unpacknatives</id>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<nativesTargetDir>target/natives</nativesTargetDir>
+					<separateDirs>false</separateDirs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version><!--$NO-MVN-MAN-VER$ -->
+		</dependency>
+		<dependency>
+			<groupId>com.carrotsearch</groupId>
+			<artifactId>junit-benchmarks</artifactId>
+			<version>0.6.0</version><!--$NO-MVN-MAN-VER$ -->
+		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>1.6</version><!--$NO-MVN-MAN-VER$ -->
+		</dependency>
+		<dependency>
+			<groupId>org.heliosphere.drake</groupId>
+			<artifactId>drake-base</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.heliosphere.drake</groupId>
+			<artifactId>drake-base</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<classifier>tests</classifier>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.heliosphere.drake</groupId>
+			<artifactId>drake-codec</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.heliosphere.drake</groupId>
+			<artifactId>drake-message</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.heliosphere.drake</groupId>
+			<artifactId>drake-command-server</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+				<dependency>
+			<groupId>org.reddwarfserver.server</groupId>
+			<artifactId>sgs-server</artifactId>
+			<version>0.10.2</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>je</artifactId>
+					<groupId>com.sleepycat</groupId>
+				</exclusion>
+			</exclusions>
+				</dependency>
+		<dependency>
+			<groupId>org.reddwarfserver.server</groupId>
+			<artifactId>sgs-shared</artifactId>
+			<version>1.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.reddwarfserver.server</groupId>
+			<artifactId>sgs-server-internal-api</artifactId>
+			<version>0.10.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.reddwarfserver.server</groupId>
+			<artifactId>sgs-server-api</artifactId>
+			<version>0.10.2</version>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.reddwarfserver.ext.berkeleydb</groupId> -->
+<!-- 			<artifactId>db-binaries</artifactId> -->
+<!-- 			<version>4.5.20</version> -->
+<!-- 			<classifier>natives-win32-x86</classifier> -->
+<!-- 			<scope>runtime</scope> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.reddwarfserver.ext.berkeleydb</groupId>
+			<artifactId>db-binaries</artifactId>
+			<version>4.5.20</version>
+			<type>zip</type>
+		</dependency>
+	</dependencies>
+	<organization>
+		<name>Heliosphere Ltd.</name>
+	</organization>
+	<inceptionYear>2012</inceptionYear>
+</project>
