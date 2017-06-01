@@ -1,0 +1,280 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+	                         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.heliosphere.demeter</groupId>
+	<artifactId>demeter</artifactId>
+	<name>Demeter</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<description>Drake is the parent project of the Demeter framework composed of several modules which provide basic functionnality used by multiple Heliosphere specialized projects.</description>
+	<inceptionYear>2016</inceptionYear>
+	<developers>
+		<developer>
+			<id>rec</id>
+			<name>Christophe Resse</name>
+			<email>christophe.resse@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<organization>
+		<name>Heliosphere Corp.</name>
+	</organization>
+	<build>
+
+		<pluginManagement>
+			<plugins>
+
+				<!-- COMPILATION -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+						<encoding>UTF-8</encoding>
+					</configuration>
+				</plugin>
+
+				<!-- SOURCES -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>2.4</version>
+					<executions>
+						<execution>
+							<id>attach-sources</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!-- JAVADOC -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.10.3</version>
+					<executions>
+						<execution>
+							<id>attach-javadocs</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+							<configuration>
+								<show>private</show>
+								<quiet>true</quiet>
+								<failOnError>false</failOnError>
+								<additionalparam>-Xdoclint:none</additionalparam>
+							</configuration>
+						</execution>
+						<execution>
+							<id>aggregate</id>
+							<phase>site</phase>
+							<goals>
+								<goal>aggregate</goal>
+							</goals>
+							<configuration>
+								<show>private</show>
+								<quiet>true</quiet>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!-- SITE -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.4</version>
+					<configuration>
+						<failOnError>false</failOnError>
+						<additionalparam>-Xdoclint:none</additionalparam>
+					</configuration>
+				</plugin>
+
+				<!-- SUREFIRE -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.10</version>
+				</plugin>
+
+				<!-- JAR: Create a jar of the test classes. -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>2.4</version>
+					<executions>
+						<execution>
+							<phase>package</phase>
+							<goals>
+								<goal>jar</goal>
+								<goal>test-jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!-- NATIVEDEPENDENCIES: Unpack every dependency with a classifier beginning
+					with 'natives-'. -->
+				<plugin>
+					<groupId>com.googlecode.mavennatives</groupId>
+					<artifactId>maven-nativedependencies-plugin</artifactId>
+					<version>0.0.7</version>
+					<executions>
+						<execution>
+							<id>unpacknatives</id>
+							<goals>
+								<goal>copy</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<nativesTargetDir>target/natives</nativesTargetDir>
+						<separateDirs>true</separateDirs>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+
+		<plugins></plugins>
+
+	</build>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>1.2.14</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>joda-time</groupId>
+				<artifactId>joda-time</artifactId>
+				<version>1.6</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-configuration</groupId>
+				<artifactId>commons-configuration</artifactId>
+				<version>1.9</version>
+			</dependency>
+
+			<dependency>
+				<groupId>uk.com.robust-it</groupId>
+				<artifactId>cloning</artifactId>
+				<version>1.7.4</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>1.3.160</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.carrotsearch</groupId>
+				<artifactId>junit-benchmarks</artifactId>
+				<version>0.6.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.16.8</version>
+			</dependency>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.12</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.6</version>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>3.2.1</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>14.0.1</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.esotericsoftware.kryo</groupId>
+				<artifactId>kryo</artifactId>
+				<version>2.20</version>
+			</dependency>
+
+			<dependency>
+				<groupId>args4j</groupId>
+				<artifactId>args4j</artifactId>
+				<version>2.33</version>
+			</dependency>
+			<dependency>
+				<groupId>com.neovisionaries</groupId>
+				<artifactId>nv-i18n</artifactId>
+				<version>1.18</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.infomas</groupId>
+				<artifactId>annotation-detector</artifactId>
+				<version>3.0.5</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<properties>
+		<project.directory.benchmark>${basedir/benchmark}</project.directory.benchmark>
+		<project.directory.run>${basedir/run}</project.directory.run>
+		<project.directory.data>${basedir/data}</project.directory.data>
+		<project.directory.log>${basedir/log}</project.directory.log>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>../demeter-base</module>
+		<module>../demeter-utility</module>
+	</modules>
+
+	<distributionManagement>
+
+		<snapshotRepository>
+			<id>heliosphere-nexus-snapshot</id>
+			<name>Heliosphere Nexus Snapshots</name>
+			<url>http://www.heliosphere-mannet-nexus.com:9086/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+
+		<repository>
+			<id>heliosphere-nexus-release</id>
+			<name>Heliosphere Nexus Releases</name>
+			<url>http://www.heliosphere-mannet-nexus.com:9086/nexus/content/repositories/releases/</url>
+		</repository>
+
+	</distributionManagement>
+
+</project>

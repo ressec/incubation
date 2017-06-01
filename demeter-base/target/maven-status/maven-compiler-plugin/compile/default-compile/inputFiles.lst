@@ -1,0 +1,13 @@
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/resource/bundle/ResourceBundleManager.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/exception/package-info.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/exception/IExceptionType.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/exception/InvalidArgumentException.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/resource/bundle/BundleBase.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/exception/NotImplementedException.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/resource/bundle/ResourceException.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/exception/ResourceBundleException.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/exception/AbstractUncheckedException.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/annotation/License.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/annotation/Copyright.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/resource/bundle/IBundle.java
+/Users/Christophe/Technology/Repository/Eclipse/dakota/heliosphere/demeter/demeter-base/src/main/java/com/heliosphere/demeter/base/exception/AbstractCheckedException.java
