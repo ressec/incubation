@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>icare</artifactId>
+		<groupId>com.heliosphere.icare</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../icare</relativePath>
+	</parent>
+	<artifactId>icare-model-entity</artifactId>
+	<name>Icare Model Entity</name>
+	<inceptionYear>2016</inceptionYear>
+	<description>The icare-model-entity module is part of the Heliosphere's Icare framework. It contains the data entity artifacts used by other icare modules.</description>
+	<organization>
+		<name>Heliosphere Corp.</name>
+	</organization>
+	<dependencies>
+		<dependency>
+			<groupId>com.heliosphere.icare</groupId>
+			<artifactId>icare-base</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
