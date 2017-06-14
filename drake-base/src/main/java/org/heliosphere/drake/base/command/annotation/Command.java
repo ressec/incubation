@@ -46,7 +46,7 @@ public @interface Command
 	/**
 	 * Command prefix.
 	 * <p>
-	 * Can be {@code null} or one of the predifined prefix ; i.e. '#', '/', '.',
+	 * Can be {@code null} or one of the predefined prefix ; i.e. '#', '/', '.',
 	 * ';', ':'.
 	 * @return The command prefix.
 	 */
