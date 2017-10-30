@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>era-geocoding</artifactId>
+  <name>Era Geocoding</name>
+  <parent>
+  	<groupId>org.heliosphere.era</groupId>
+  	<artifactId>era-parent</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<relativePath>../era-parent</relativePath>
+  </parent>
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.projectlombok</groupId>
+  		<artifactId>lombok</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>commons-io</groupId>
+  		<artifactId>commons-io</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>commons-configuration</groupId>
+  		<artifactId>commons-configuration</artifactId>
+  	</dependency>
+  	<dependency>
+  		<groupId>log4j</groupId>
+  		<artifactId>log4j</artifactId>
+  	</dependency>
+	<dependency>
+		<groupId>com.google.maps</groupId>
+		<artifactId>google-maps-services</artifactId>
+	</dependency>
+  </dependencies>
+  <url>https://github.com/ressec/era</url>
+  <inceptionYear>2017</inceptionYear>
+  <description>Era Geocoding is the Heliosphere's Era sub project dedicated to Google Maps' Geocoding experimentations.</description>
+</project>
