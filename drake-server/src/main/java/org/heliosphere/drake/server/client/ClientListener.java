@@ -14,14 +14,14 @@ package org.heliosphere.drake.server.client;
 import java.io.Serializable;
 import java.nio.ByteBuffer;
 
-import lombok.extern.log4j.Log4j;
-
 import org.heliosphere.drake.base.message.codec.MessageDecodingException;
 import org.heliosphere.drake.server.player.IServerPlayer;
 
 import com.sun.sgs.app.AppContext;
 import com.sun.sgs.app.ClientSessionListener;
 import com.sun.sgs.app.ManagedReference;
+
+import lombok.extern.log4j.Log4j;
 
 /**
  * A client session listener created for a given server side player. The
@@ -35,7 +35,7 @@ import com.sun.sgs.app.ManagedReference;
 public final class ClientListener implements ClientSessionListener, Serializable
 {
 	/**
-	 * Default serialization identifer.
+	 * Default serialization identifier.
 	 */
 	private static final long serialVersionUID = 1;
 

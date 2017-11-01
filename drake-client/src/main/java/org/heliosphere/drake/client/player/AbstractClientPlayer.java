@@ -16,8 +16,6 @@ import java.net.PasswordAuthentication;
 import java.nio.ByteBuffer;
 import java.util.Properties;
 
-import lombok.extern.log4j.Log4j;
-
 import org.apache.commons.lang.Validate;
 import org.heliosphere.drake.base.manager.Manager;
 import org.heliosphere.drake.base.message.IMessage;
@@ -34,6 +32,8 @@ import org.heliosphere.drake.client.type.ClientPropertiesType;
 import com.sun.sgs.client.ClientChannel;
 import com.sun.sgs.client.ClientChannelListener;
 import com.sun.sgs.client.simple.SimpleClient;
+
+import lombok.extern.log4j.Log4j;
 
 /**
  * Abstract implementation of a player located on the client side.
