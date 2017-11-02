@@ -23,7 +23,7 @@ import com.google.maps.model.GeocodingResult;
 public class GeocodingSample
 {
 	/**
-	 * Google Maps API key.
+	 * Google Maps API key for Christophe Resse.
 	 */
 	@SuppressWarnings("nls")
 	private final static String GOOGLE_API_KEY = "AIzaSyDJsE-0pbKHV2NU1golO1VVZz5OZBnInTk";
@@ -40,6 +40,7 @@ public class GeocodingSample
 			results = GeocodingApi.geocode(context, "11 rue docteur coquand 74100 annemasse france").await();
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 			System.out.println(gson.toJson(results[0].addressComponents));
+			System.out.println(gson.toJson(results[0].geometry));
 		}
 		catch (ApiException e)
 		{

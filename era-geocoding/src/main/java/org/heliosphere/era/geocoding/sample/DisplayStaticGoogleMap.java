@@ -23,17 +23,21 @@ import javax.swing.JLabel;
 
 public class DisplayStaticGoogleMap
 {
-
+	/**
+	 * Main entry point.
+	 * <p>
+	 * @param arguments Command line arguments. 
+	 */
 	@SuppressWarnings("nls")
-	public static void main(String[] args)
+	public static void main(String[] arguments)
 	{
 		JFrame test = new JFrame("Google Maps");
 
 		try
 		{
 			String destinationFile = "image.jpg";
-			String latitude = "40.714728";
-			String longitude = "-73.998672";
+			String latitude = "46.19584589999999";
+			String longitude = "6.2327423";
 			String imageUrl = "https://maps.googleapis.com/maps/api/staticmap?center="
 					+ latitude
 					+ ","
