@@ -9,7 +9,7 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.heliosphere.demeter.base.resource.bundle;
+package com.heliosphere.demeter2.base.resource.bundle;
 
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import com.heliosphere.demeter.base.annotation.BundleEnumRegister;
+import com.heliosphere.demeter2.base.annotation.BundleEnumRegister;
 
 import eu.infomas.annotation.AnnotationDetector.TypeReporter;
 

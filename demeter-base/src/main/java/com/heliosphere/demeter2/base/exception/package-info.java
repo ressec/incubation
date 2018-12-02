@@ -3,4 +3,4 @@
  * <hr>
  * @author Christophe Resse - Heliosphere 2016
  */
-package com.heliosphere.demeter.base.exception;
+package com.heliosphere.demeter2.base.exception;

@@ -9,32 +9,40 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.heliosphere.demeter.base.annotation;
+package com.heliosphere.demeter2.base.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import com.heliosphere.demeter.base.resource.bundle.IBundle;
-import com.heliosphere.demeter.base.resource.bundle.ResourceBundleManager;
-
 /**
- * This annotation is used to make a resource bundle enumeration file to be auto registered
- * by the {@link ResourceBundleManager}. This annotation is intended to be placed on enumeration 
- * types inheriting the {@link IBundle} interface.
+ * This annotation is used to apply a license to a type.
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Christophe Resse - Heliosphere</a>
  * @version 1.0.0
  */
 @Target({ java.lang.annotation.ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
-public @interface BundleEnumRegister
+public @interface License
 {
 	/**
-	 * Priority to load the resource bundle enumeration. Lowest priority is loaded first ; 
-	 * default is {@code 100}. 
+	 * License.
 	 * <hr>
-	 * @return Priority to load the resource bundle enumeration.
+	 * @return The license.
 	 */
-	int priority() default 100;
+	String license() default "";
+
+	/**
+	 * Version.
+	 * <hr>
+	 * @return The license version.
+	 */
+	String version() default "";
+
+	/**
+	 * URL.
+	 * <hr>
+	 * @return The license url.
+	 */
+	String url() default "";
 }

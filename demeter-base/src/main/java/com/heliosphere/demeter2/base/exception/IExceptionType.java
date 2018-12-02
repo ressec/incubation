@@ -9,7 +9,7 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.heliosphere.demeter.base.exception;
+package com.heliosphere.demeter2.base.exception;
 
 /**
  * Interface to be implemented by all exception enumeration classes. This

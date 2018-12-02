@@ -9,12 +9,12 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.heliosphere.demeter.base.exception;
+package com.heliosphere.demeter2.base.exception;
 
 import java.text.MessageFormat;
 
-import com.heliosphere.demeter.base.resource.bundle.IBundle;
-import com.heliosphere.demeter.base.resource.bundle.ResourceBundleManager;
+import com.heliosphere.demeter2.base.resource.bundle.IBundle;
+import com.heliosphere.demeter2.base.resource.bundle.ResourceBundleManager;
 
 /**
  * An abstract implementation of an unchecked exception.
