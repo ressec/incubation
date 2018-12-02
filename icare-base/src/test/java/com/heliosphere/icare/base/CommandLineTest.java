@@ -20,8 +20,8 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 import org.kohsuke.args4j.spi.StringOptionHandler;
 
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 import com.heliosphere.icare.base.model.entity.Country;
 import com.heliosphere.icare.base.type.HonorificType;
 import com.neovisionaries.i18n.LanguageCode;
@@ -46,14 +46,14 @@ public class CommandLineTest
 	 * Arguments passed on the command line other than the options.
 	 */
 	@Argument
-    private List<String> arguments = new ArrayList<>();
+	private List<String> arguments = new ArrayList<>();
 
 	/**
 	 * Country {@code CLI} value.
 	 */
 	@SuppressWarnings("nls")
 	@Option(required=true, name="-code", handler=StringOptionHandler.class, usage="Country code to retrieve.")
-    private String code = "All";
+	private String code = "All";
 
 	/**
 	 * Command line interface ({@code CLI}) main entry point.
@@ -81,9 +81,9 @@ public class CommandLineTest
 	 */
 	private final void CommandLine(final String[] args) throws CmdLineException
 	{
-//		ResourceBundleManager.register(BundleDemeterBase.class);
-//		ResourceBundleManager.register(BundleIcareBase.class);
-		
+		//		ResourceBundleManager.register(BundleDemeterBase.class);
+		//		ResourceBundleManager.register(BundleIcareBase.class);
+
 		CmdLineParser parser = new CmdLineParser(this);
 		parser.parseArgument(args);
 

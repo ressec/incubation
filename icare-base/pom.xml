@@ -15,6 +15,14 @@
 			<groupId>com.heliosphere.demeter</groupId>
 			<artifactId>demeter-base</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.neovisionaries</groupId>
+			<artifactId>nv-i18n</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.heliosphere.demeter</groupId>
+			<artifactId>demeter2-base</artifactId>
+		</dependency>
 	</dependencies>
 	<description>The icare-base module is part of the Heliosphere's Icare framework. It contains the low-level artifacts used by other icare modules.</description>
 	<organization>

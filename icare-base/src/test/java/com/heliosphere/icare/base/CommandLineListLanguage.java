@@ -20,8 +20,8 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 import org.kohsuke.args4j.spi.StringOptionHandler;
 
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 import com.neovisionaries.i18n.LanguageCode;
 
 import lombok.extern.log4j.Log4j;
@@ -44,14 +44,14 @@ public class CommandLineListLanguage
 	 * Arguments passed on the command line other than the options.
 	 */
 	@Argument
-    private List<String> arguments = new ArrayList<>();
+	private List<String> arguments = new ArrayList<>();
 
 	/**
 	 * Language code value.
 	 */
 	@SuppressWarnings("nls")
 	@Option(required=true, name="-code", handler=StringOptionHandler.class, usage="Language code to retrieve.")
-    private String code = "All";
+	private String code = "All";
 
 	/**
 	 * Command line interface ({@code CLI}) main entry point.
@@ -103,7 +103,7 @@ public class CommandLineListLanguage
 	{
 		LanguageCode languageCode = LanguageCode.valueOf(code);
 
-	    System.out.format("[%s] %s\n", languageCode, languageCode.getName());
+		System.out.format("[%s] %s\n", languageCode, languageCode.getName());
 	}
 
 
@@ -116,7 +116,7 @@ public class CommandLineListLanguage
 		// List all the language codes.
 		for (LanguageCode code : LanguageCode.values())
 		{
-		    System.out.format("[%s] %s\n", code, code.getName());
+			System.out.format("[%s] %s\n", code, code.getName());
 		}
 	}
 }

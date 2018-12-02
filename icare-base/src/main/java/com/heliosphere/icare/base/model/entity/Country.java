@@ -11,8 +11,8 @@
  */
 package com.heliosphere.icare.base.model.entity;
 
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 import com.neovisionaries.i18n.CountryCode;
 import com.neovisionaries.i18n.CurrencyCode;
 import com.neovisionaries.i18n.LanguageCode;

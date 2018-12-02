@@ -11,8 +11,8 @@
  */
 package com.heliosphere.icare.base.type;
 
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 
 /**
  * Marker interface for the {@code Icare} types. All types of the {@code Heliosphere's Icare}
