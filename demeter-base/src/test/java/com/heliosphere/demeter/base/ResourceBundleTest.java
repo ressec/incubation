@@ -23,9 +23,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.heliosphere.demeter.base.resource.bundle.BundleDemeterBase;
-import com.heliosphere.demeter.base.resource.bundle.ResourceBundleManager;
-import com.heliosphere.demeter.base.resource.bundle.ResourceException;
+import com.heliosphere.demeter2.base.resource.bundle.BundleDemeterBase;
+import com.heliosphere.demeter2.base.resource.bundle.ResourceBundleManager;
+import com.heliosphere.demeter2.base.resource.bundle.ResourceException;
 
 /**
  * A test case for the {@link BundleDemeterBase} class using the

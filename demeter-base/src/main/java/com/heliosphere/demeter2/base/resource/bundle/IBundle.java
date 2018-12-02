@@ -9,40 +9,30 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.heliosphere.demeter.base.annotation;
-
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+package com.heliosphere.demeter2.base.resource.bundle;
 
 /**
- * This annotation is used to apply a license to a type.
+ * Marker interface for resource bundle enumerations.
+ * <p>
+ * Each new resource bundle enumeration must implements this marker interface to be
+ * handled by the {@link ResourceBundleManager}.
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Christophe Resse - Heliosphere</a>
  * @version 1.0.0
  */
-@Target({ java.lang.annotation.ElementType.TYPE })
-@Retention(RetentionPolicy.RUNTIME)
-public @interface License
+public interface IBundle
 {
 	/**
-	 * License.
-	 * <hr>
-	 * @return The license.
+	 * Returns the resource bundle key corresponding to the enumerated value.
+	 * <p>
+	 * @return Resource bundle key.
 	 */
-	String license() default "";
+	String getKey();
 
 	/**
-	 * Version.
-	 * <hr>
-	 * @return The license version.
+	 * Returns the resource bundle value according to the current locale.
+	 * <p>
+	 * @return Resource bundle value.
 	 */
-	String version() default "";
-
-	/**
-	 * URL.
-	 * <hr>
-	 * @return The license url.
-	 */
-	String url() default "";
+	String getValue();
 }

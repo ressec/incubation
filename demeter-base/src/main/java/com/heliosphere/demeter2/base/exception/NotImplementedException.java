@@ -9,18 +9,17 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.heliosphere.demeter.base.exception;
+package com.heliosphere.demeter2.base.exception;
 
-import com.heliosphere.demeter.base.resource.bundle.IBundle;
+import com.heliosphere.demeter2.base.resource.bundle.IBundle;
 
 /**
- * Exception thrown to indicate a method has been passed an illegal or
- * inappropriate argument.
+ * Exception thrown to indicate that a service has not been implemented yet.
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Christophe Resse - Heliosphere</a>
  * @version 1.0.0
  */
-public class InvalidArgumentException extends AbstractUncheckedException
+public class NotImplementedException extends AbstractUncheckedException
 {
 	/**
 	 * Default serialization identifier.
@@ -28,30 +27,27 @@ public class InvalidArgumentException extends AbstractUncheckedException
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Thrown to indicate that a method has been passed an illegal or
-	 * inappropriate argument.
+	 * Thrown to indicate that a service is not yet implemented.
 	 */
-	public InvalidArgumentException()
+	public NotImplementedException()
 	{
 		super();
 	}
 
 	/**
-	 * Thrown to indicate that a method has been passed an illegal or
-	 * inappropriate argument.
+	 * Thrown to indicate that a service is not yet implemented.
 	 * <p>
 	 * @param key Resource bundle key (enumerated value coming from an
 	 * enumeration implementing the {@link IBundle} interface).
 	 */
 	@SuppressWarnings("hiding")
-	public InvalidArgumentException(final Enum<? extends IBundle> key)
+	public NotImplementedException(final Enum<? extends IBundle> key)
 	{
 		super(key);
 	}
 
 	/**
-	 * Thrown to indicate that a method has been passed an illegal or
-	 * inappropriate argument.
+	 * Thrown to indicate that a service is not yet implemented.
 	 * <p>
 	 * @param key Exception key (enumerated value coming from an enumeration
 	 * implementing the {@link IExceptionType} interface).
@@ -59,43 +55,40 @@ public class InvalidArgumentException extends AbstractUncheckedException
 	 * message.
 	 */
 	@SuppressWarnings("hiding")
-	public InvalidArgumentException(final Enum<?> key, final Object... parameters)
+	public NotImplementedException(final Enum<?> key, final Object... parameters)
 	{
 		super(key, parameters);
 	}
 
 	/**
-	 * Thrown to indicate that a method has been passed an illegal or
-	 * inappropriate argument.
+	 * Thrown to indicate that a service is not yet implemented.
 	 * <p>
 	 * @param exception Parent {@link Exception}.
 	 */
-	public InvalidArgumentException(final Exception exception)
+	public NotImplementedException(final Exception exception)
 	{
 		super(exception);
 	}
 
 	/**
-	 * Thrown to indicate that a method has been passed an illegal or
-	 * inappropriate argument.
+	 * Thrown to indicate that a service is not yet implemented.
 	 * <p>
 	 * @param message Message describing the error being the cause of the raised
 	 * exception.
 	 */
-	public InvalidArgumentException(final String message)
+	public NotImplementedException(final String message)
 	{
 		super(message);
 	}
 
 	/**
-	 * Thrown to indicate that a method has been passed an illegal or
-	 * inappropriate argument.
+	 * Thrown to indicate that a service is not yet implemented.
 	 * <p>
 	 * @param message Message describing the error being the cause of the raised
 	 * exception.
 	 * @param exception Parent {@link Exception}.
 	 */
-	public InvalidArgumentException(final String message, final Exception exception)
+	public NotImplementedException(final String message, final Exception exception)
 	{
 		super(message, exception);
 	}

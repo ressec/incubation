@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.heliosphere.demeter</groupId>
-	<artifactId>demeter</artifactId>
+	<artifactId>demeter2</artifactId>
 	<name>Demeter</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -196,7 +196,7 @@
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
-				<version>1.16.8</version>
+				<version>1.18.4</version>
 			</dependency>
 
 			<dependency>
@@ -257,6 +257,10 @@
 	</properties>
 
 	<modules>
+		
+		
+		
+		
 		<module>../demeter-base</module>
 		<module>../demeter-utility</module>
 	</modules>

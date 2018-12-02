@@ -9,7 +9,7 @@
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.heliosphere.demeter.base.resource.bundle;
+package com.heliosphere.demeter2.base.resource.bundle;
 
 import java.lang.reflect.Method;
 import java.text.MessageFormat;
@@ -27,12 +27,12 @@ import lombok.extern.log4j.Log4j;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
-import com.heliosphere.demeter.base.annotation.BundleEnum;
-import com.heliosphere.demeter.base.annotation.BundleEnumRegister;
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
-import com.heliosphere.demeter.base.exception.InvalidArgumentException;
-import com.heliosphere.demeter.base.exception.ResourceBundleException;
+import com.heliosphere.demeter2.base.annotation.BundleEnum;
+import com.heliosphere.demeter2.base.annotation.BundleEnumRegister;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
+import com.heliosphere.demeter2.base.exception.InvalidArgumentException;
+import com.heliosphere.demeter2.base.exception.ResourceBundleException;
 
 import eu.infomas.annotation.AnnotationDetector;
 

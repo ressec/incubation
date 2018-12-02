@@ -2,25 +2,26 @@
  * Copyright(c) 2016 - Heliosphere Corp.
  * ---------------------------------------------------------------------------
  * This file is part of the Heliosphere's project which is licensed under the
- * Apache license version 2 and use is subject to license terms. You should have
- * received a copy of the license with the project's artifact binaries and/or
- * sources.
+ * Apache license version 2 and use is subject to license terms.
+ * You should have received a copy of the license with the project's artifact
+ * binaries and/or sources.
  *
  * License can be consulted at http://www.apache.org/licenses/LICENSE-2.0
  * ---------------------------------------------------------------------------
  */
-package com.heliosphere.demeter.base.resource.bundle;
+package com.heliosphere.demeter2.base.exception;
 
-import com.heliosphere.demeter.base.exception.AbstractUncheckedException;
-import com.heliosphere.demeter.base.exception.IExceptionType;
+import com.heliosphere.demeter2.base.resource.bundle.IBundle;
+import com.heliosphere.demeter2.base.resource.bundle.ResourceException;
 
 /**
- * Exception thrown to indicate an error occurred while processing a resource.
+ * Exception thrown to indicate an error occurred while processing a resource
+ * bundle.
  * <hr>
  * @author <a href="mailto:christophe.resse@gmail.com">Christophe Resse - Heliosphere</a>
  * @version 1.0.0
  */
-public class ResourceException extends AbstractUncheckedException
+public class ResourceBundleException extends ResourceException
 {
 	/**
 	 * Serialization identifier.
@@ -28,27 +29,30 @@ public class ResourceException extends AbstractUncheckedException
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Exception thrown to indicate an error occurred while processing a resource.
+	 * Exception thrown to indicate an error occurred while processing a resource
+	 * bundle.
 	 */
-	public ResourceException()
+	public ResourceBundleException()
 	{
 		super();
 	}
 
 	/**
-	 * Exception thrown to indicate an error occurred while processing a resource.
+	 * Exception thrown to indicate an error occurred while processing a resource
+	 * bundle.
 	 * <p>
 	 * @param key Resource bundle key (enumerated value coming from an
 	 * enumeration implementing the {@link IBundle} interface).
 	 */
 	@SuppressWarnings("hiding")
-	public ResourceException(final Enum<? extends IBundle> key)
+	public ResourceBundleException(final Enum<? extends IBundle> key)
 	{
 		super(key);
 	}
 
 	/**
-	 * Exception thrown to indicate an error occurred while processing a resource.
+	 * Exception thrown to indicate an error occurred while processing a resource
+	 * bundle.
 	 * <p>
 	 * @param key Exception key (enumerated value coming from an enumeration
 	 * implementing the {@link IExceptionType} interface).
@@ -56,40 +60,43 @@ public class ResourceException extends AbstractUncheckedException
 	 * message.
 	 */
 	@SuppressWarnings("hiding")
-	public ResourceException(final Enum<?> key, final Object... parameters)
+	public ResourceBundleException(final Enum<?> key, final Object... parameters)
 	{
 		super(key, parameters);
 	}
 
 	/**
-	 * Exception thrown to indicate an error occurred while processing a resource.
+	 * Exception thrown to indicate an error occurred while processing a resource
+	 * bundle.
 	 * <p>
 	 * @param exception Parent exception.
 	 */
-	public ResourceException(final Exception exception)
+	public ResourceBundleException(final Exception exception)
 	{
 		super(exception);
 	}
 
 	/**
-	 * Exception thrown to indicate an error occurred while processing a resource.
+	 * Exception thrown to indicate an error occurred while processing a resource
+	 * bundle.
 	 * <p>
 	 * @param message Message describing the error being the cause of the raised
 	 * exception.
 	 */
-	public ResourceException(final String message)
+	public ResourceBundleException(final String message)
 	{
 		super(message);
 	}
 
 	/**
-	 * Exception thrown to indicate an error occurred while processing a resource.
+	 * Exception thrown to indicate an error occurred while processing a resource
+	 * bundle.
 	 * <p>
 	 * @param message Message describing the error being the cause of the raised
 	 * exception.
 	 * @param exception Parent exception.
 	 */
-	public ResourceException(final String message, final Exception exception)
+	public ResourceBundleException(final String message, final Exception exception)
 	{
 		super(message, exception);
 	}
