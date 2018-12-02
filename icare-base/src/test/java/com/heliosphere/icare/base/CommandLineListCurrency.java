@@ -20,8 +20,8 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 import org.kohsuke.args4j.spi.StringOptionHandler;
 
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 import com.neovisionaries.i18n.CurrencyCode;
 
 import lombok.extern.log4j.Log4j;
@@ -44,14 +44,14 @@ public class CommandLineListCurrency
 	 * Arguments passed on the command line other than the options.
 	 */
 	@Argument
-    private List<String> arguments = new ArrayList<>();
+	private List<String> arguments = new ArrayList<>();
 
 	/**
 	 * Language code value.
 	 */
 	@SuppressWarnings("nls")
 	@Option(required=true, name="-code", handler=StringOptionHandler.class, usage="Currency code to retrieve.")
-    private String code = "All";
+	private String code = "All";
 
 	/**
 	 * Command line interface ({@code CLI}) main entry point.
@@ -116,7 +116,7 @@ public class CommandLineListCurrency
 		// List all the currency codes.
 		for (CurrencyCode code : CurrencyCode.values())
 		{
-		    System.out.format("[%s] %03d %s\n", code, code.getNumeric(), code.getName());
+			System.out.format("[%s] %03d %s\n", code, code.getNumeric(), code.getName());
 		}
 	}
 }

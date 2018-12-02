@@ -1,7 +1,7 @@
 /*
  * Copyright(c) 2016 - Heliosphere Corp.
  * ---------------------------------------------------------------------------
- * This file is part of the Heliosphere's project which is licensed under the 
+ * This file is part of the Heliosphere's project which is licensed under the
  * Apache license version 2 and use is subject to license terms.
  * You should have received a copy of the license with the project's artifact
  * binaries and/or sources.
@@ -11,8 +11,8 @@
  */
 package com.heliosphere.icare.model.entity.person;
 
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 import com.heliosphere.icare.model.entity.person.type.ContactType;
 
 import lombok.EqualsAndHashCode;

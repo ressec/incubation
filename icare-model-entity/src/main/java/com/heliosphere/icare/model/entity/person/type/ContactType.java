@@ -11,10 +11,10 @@
  */
 package com.heliosphere.icare.model.entity.person.type;
 
-import com.heliosphere.demeter.base.annotation.BundleEnum;
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
 import com.heliosphere.demeter.base.resource.bundle.ResourceBundleManager;
+import com.heliosphere.demeter2.base.annotation.BundleEnum;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 import com.heliosphere.icare.base.type.IIcareType;
 import com.neovisionaries.i18n.LanguageCode;
 

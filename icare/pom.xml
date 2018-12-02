@@ -173,6 +173,11 @@
 				<artifactId>nv-i18n</artifactId>
 				<version>1.18</version>
 			</dependency>
+			<dependency>
+				<groupId>com.heliosphere.demeter</groupId>
+				<artifactId>demeter2-base</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

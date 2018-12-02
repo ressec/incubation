@@ -11,9 +11,9 @@
  */
 package com.heliosphere.icare.base.resource.bundle;
 
-import com.heliosphere.demeter.base.annotation.BundleEnumRegister;
-import com.heliosphere.demeter.base.resource.bundle.IBundle;
-import com.heliosphere.demeter.base.resource.bundle.ResourceBundleManager;
+import com.heliosphere.demeter2.base.annotation.BundleEnumRegister;
+import com.heliosphere.demeter2.base.resource.bundle.IBundle;
+import com.heliosphere.demeter2.base.resource.bundle.ResourceBundleManager;
 
 /**
  * Enumeration of the resource bundles of the {@code icare-base} module. Each

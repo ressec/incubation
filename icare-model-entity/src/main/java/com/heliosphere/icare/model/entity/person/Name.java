@@ -11,8 +11,8 @@
  */
 package com.heliosphere.icare.model.entity.person;
 
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -37,14 +37,14 @@ public class Name
 	@Getter
 	@Setter
 	private String last;
-	
+
 	/**
 	 * First name.
 	 */
 	@Getter
 	@Setter
 	private String first;
-	
+
 	/**
 	 * Middle name.
 	 */

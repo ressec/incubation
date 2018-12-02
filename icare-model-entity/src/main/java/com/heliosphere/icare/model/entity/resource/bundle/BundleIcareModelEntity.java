@@ -11,11 +11,11 @@
  */
 package com.heliosphere.icare.model.entity.resource.bundle;
 
-import com.heliosphere.demeter.base.annotation.BundleEnumRegister;
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
 import com.heliosphere.demeter.base.resource.bundle.IBundle;
 import com.heliosphere.demeter.base.resource.bundle.ResourceBundleManager;
+import com.heliosphere.demeter2.base.annotation.BundleEnumRegister;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 
 /**
  * Enumeration of the resource bundles of the {@code icare-model-entity} module. Each

@@ -20,8 +20,8 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 import org.kohsuke.args4j.spi.StringOptionHandler;
 
-import com.heliosphere.demeter.base.annotation.Copyright;
-import com.heliosphere.demeter.base.annotation.License;
+import com.heliosphere.demeter2.base.annotation.Copyright;
+import com.heliosphere.demeter2.base.annotation.License;
 import com.neovisionaries.i18n.LocaleCode;
 
 import lombok.extern.log4j.Log4j;
@@ -43,14 +43,14 @@ public class CommandLineListLocale
 	 * Arguments passed on the command line other than the options.
 	 */
 	@Argument
-    private List<String> arguments = new ArrayList<>();
+	private List<String> arguments = new ArrayList<>();
 
 	/**
 	 * Language code value.
 	 */
 	@SuppressWarnings("nls")
 	@Option(required=true, name="-code", handler=StringOptionHandler.class, usage="Locale code to retrieve.")
-    private String code = "All";
+	private String code = "All";
 
 	/**
 	 * Command line interface ({@code CLI}) main entry point.
@@ -115,10 +115,10 @@ public class CommandLineListLocale
 		// List all the locale codes.
 		for (LocaleCode code : LocaleCode.values())
 		{
-		    String language = code.getLanguage().getName();
-		    String country  = code.getCountry() != null ? code.getCountry().getName() : null;
+			String language = code.getLanguage().getName();
+			String country  = code.getCountry() != null ? code.getCountry().getName() : null;
 
-		    System.out.format("[%s] %s, %s\n", code, language, country);
+			System.out.format("[%s] %s, %s\n", code, language, country);
 		}
 	}
 }
